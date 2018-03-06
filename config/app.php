@@ -2,6 +2,8 @@
 
 return [
 
+    'supportEmail' => 'contact@mystphy.sx',
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
