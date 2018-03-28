@@ -13,12 +13,14 @@ class PageController extends Controller
     }
 
     public function about() {
-        return 'This is information about Foobooks';
+        return view('pages.about');
     }
 
     public function contact()
     {
-        return 'Questions? Email us at ' . Config::get('app.supportEmail');
+        return view('pages.contact')->with([
+            'email' => Config::get('app.supportEmail')
+        ]);
     }
 
 
